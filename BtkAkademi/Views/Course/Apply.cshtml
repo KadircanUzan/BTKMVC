@@ -5,9 +5,11 @@
 </div>
 
 <form method="post" asp-controller="Course" asp-action="Apply">
+    <div class="text-danger" asp-validation-summary="All"></div>
     <div class="from-group my-2">
         <label asp-for="Email">E-Mail</label>
-        <input asp-for="Email" class="form-control">
+        <input asp-for="Email" class="form-control" placeholder="Lütfen geçerli bir mail adresi giriniz">
+        <span class="text-danger" asp-validation-for="Email"></span>
     </div>
 
     <div class="from-group my-2">
@@ -35,12 +37,12 @@
     <fieldset>
         <legend>Select One Course</legend>
         <p>
-            <input type="Radio" asp-for="SelectedCourse" id="mvc" value="ASP.NET Core MVC">
+            <input type="Radio" asp-for="SelectedCourse" id="mvc" checked="true" value="ASP.NET Core MVC">
             <label>ASP.NET Core MVC</label>
         </p>
 
         <p>
-            <input type="Radio" asp-for="SelectedCourse" id="api" value="ASP.NET Core API">
+            <input type="Radio" asp-for="SelectedCourse" id="api"  value="ASP.NET Core API">
             <label>ASP.NET Core API</label>
         </p>
 

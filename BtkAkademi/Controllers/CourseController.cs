@@ -7,7 +7,8 @@ namespace BtkAkademi.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            var model=Repository.Applications;
+            return View(model);
         }
         public IActionResult Apply()
         {
@@ -19,7 +20,7 @@ namespace BtkAkademi.Controllers
         public IActionResult Apply([FromForm]Candidate candidate)
         {
             Repository.Add(candidate);
-            return Redirect("/");
+            return View("Feedback",candidate);
         }
 
     }

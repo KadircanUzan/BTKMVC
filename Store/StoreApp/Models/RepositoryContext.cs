@@ -2,13 +2,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace StoreApp.Models
 {
-    public class RepositoryContext:DbContext
+    public class RepositoryContext : DbContext
     {
         public DbSet<Product> Products { get; set; }
 
-        public RepositoryContext(DbContextOptions<RepositoryContext> options):base(options)
+        public RepositoryContext(DbContextOptions<RepositoryContext> options) : base(options)
         {
-            
+
         }
 
         /*
@@ -22,7 +22,19 @@ namespace StoreApp.Models
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);//Base deki OnModelCreating metodunu çağırır.
-            // modelBuilder.Entity<Product>().HasData()
+            modelBuilder.Entity<Product>()
+            .HasData(
+                new Product { ProductId = 1, ProductName = "Computer", Price = 10_000 },
+                new Product { ProductId = 2, ProductName = "Keyboard", Price = 20_000 },
+                new Product { ProductId = 3, ProductName = "Mouse", Price = 3_000 },
+                new Product { ProductId = 4, ProductName = "Monitor", Price = 40_000 },
+                new Product { ProductId = 5, ProductName = "Deck", Price = 5_500 }
+            );
+            /*
+            Bu örnekte, Product entity'sine ait beş örnek eklenmiştir. Bu örnekler, uygulama
+            ilk çalıştığında veritabanına eklenir. Böylece, uygulama ilk kez çalıştığında,
+            veritabanı başlangıç ​​verileriyle doldurulmuş olur.
+            */
 
         }
 

@@ -41,5 +41,18 @@ namespace StoreApp.Controllers
             //Database içerisindeki, verilere erişebiliyoruz.
             return _context.Products;
         }
+
+        //View ile geri döndürmek istediğimiz zaman
+        public IActionResult IndexView()
+        {
+            var model = _context.Products.ToList();
+            return View(model);
+        }
+
+        public IActionResult GetProduct(int id)
+        {
+            var product = _context.Products.First(p=>p.ProductId.Equals(id));
+            return View(product);
+        }
     }
 }

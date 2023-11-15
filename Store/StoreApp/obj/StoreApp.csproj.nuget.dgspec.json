@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\.Net\\BTK\\BTKMVC\\STORE\\STOREAPP\\StoreApp.csproj": {}
+    "C:\\.Net\\BTK\\BTKMVC\\Store\\StoreApp\\StoreApp.csproj": {}
   },
   "projects": {
-    "C:\\.Net\\BTK\\BTKMVC\\STORE\\STOREAPP\\StoreApp.csproj": {
+    "C:\\.Net\\BTK\\BTKMVC\\Store\\StoreApp\\StoreApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\.Net\\BTK\\BTKMVC\\STORE\\STOREAPP\\StoreApp.csproj",
+        "projectUniqueName": "C:\\.Net\\BTK\\BTKMVC\\Store\\StoreApp\\StoreApp.csproj",
         "projectName": "StoreApp",
-        "projectPath": "C:\\.Net\\BTK\\BTKMVC\\STORE\\STOREAPP\\StoreApp.csproj",
+        "projectPath": "C:\\.Net\\BTK\\BTKMVC\\Store\\StoreApp\\StoreApp.csproj",
         "packagesPath": "C:\\Users\\Kadircan\\.nuget\\packages\\",
-        "outputPath": "C:\\.Net\\BTK\\BTKMVC\\STORE\\STOREAPP\\obj\\",
+        "outputPath": "C:\\.Net\\BTK\\BTKMVC\\Store\\StoreApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

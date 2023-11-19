@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gIN21LRRYVyZYCbTddV+sYik0gFpRsrzhZv07Q2GMGVkVFAjvtTSD4pnHrcAW6f8fU0Xdl8cC5JMfSkUe1WsIA==",
+  "dgSpecHash": "7vjgXndkKvLCC8RGYcJNE1oIeccIr+r1/nz7KzPOn+JqCE7Up3xpzwugaqd/qmECKUjC6wJVZIY1IzxvqZEGlw==",
   "success": true,
-  "projectFilePath": "C:\\.Net\\BTK\\BTKMVC\\Store\\StoreApp\\StoreApp.csproj",
+  "projectFilePath": "C:\\.Net\\BTK\\BTKMVC\\STORE\\STOREAPP\\StoreApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kadircan\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Kadircan\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.0\\microsoft.data.sqlite.core.6.0.0.nupkg.sha512",

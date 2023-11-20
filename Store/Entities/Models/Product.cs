@@ -1,4 +1,4 @@
-namespace StoreApp.Models
+namespace Store.Entities.Models
 {
     public class Product
     {

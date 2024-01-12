@@ -9,11 +9,9 @@
       "StoreApp/1.0.0": {
         "dependencies": {
           "Entities": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "6.0.0",
           "Microsoft.EntityFrameworkCore.Design": "6.0.0",
-          "Microsoft.EntityFrameworkCore.Sqlite": "6.0.0",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.0",
-          "Repositories": "1.0.0.0"
+          "Repositories": "1.0.0"
         },
         "runtime": {
           "StoreApp.dll": {}
@@ -317,12 +315,14 @@
           "Entities.dll": {}
         }
       },
-      "Repositories/1.0.0.0": {
+      "Repositories/1.0.0": {
+        "dependencies": {
+          "Entities": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "6.0.0",
+          "Microsoft.EntityFrameworkCore.Sqlite": "6.0.0"
+        },
         "runtime": {
-          "Repositories.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "Repositories.dll": {}
         }
       }
     }
@@ -555,8 +555,8 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Repositories/1.0.0.0": {
-      "type": "reference",
+    "Repositories/1.0.0": {
+      "type": "project",
       "serviceable": false,
       "sha512": ""
     }

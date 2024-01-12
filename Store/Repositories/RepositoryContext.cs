@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Store.Entities.Models;
-
 namespace Store.Repositories
 {
     public class RepositoryContext : DbContext

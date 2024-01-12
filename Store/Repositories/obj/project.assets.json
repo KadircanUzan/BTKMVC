@@ -515,6 +515,16 @@
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
+      },
+      "Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Entities.dll": {}
+        }
       }
     }
   },
@@ -1144,10 +1154,16 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Entities/1.0.0": {
+      "type": "project",
+      "path": "../Entities/Entities.csproj",
+      "msbuildProject": "../Entities/Entities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Entities >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.0",
       "Microsoft.EntityFrameworkCore.Sqlite >= 6.0.0"
     ]
@@ -1159,11 +1175,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\.Net\\BTK\\BTKMVC\\Store\\Repositories\\Repositories.csproj",
+      "projectUniqueName": "C:\\.Net\\BTK\\BTKMVC\\STORE\\Repositories\\Repositories.csproj",
       "projectName": "Repositories",
-      "projectPath": "C:\\.Net\\BTK\\BTKMVC\\Store\\Repositories\\Repositories.csproj",
+      "projectPath": "C:\\.Net\\BTK\\BTKMVC\\STORE\\Repositories\\Repositories.csproj",
       "packagesPath": "C:\\Users\\Kadircan\\.nuget\\packages\\",
-      "outputPath": "C:\\.Net\\BTK\\BTKMVC\\Store\\Repositories\\obj\\",
+      "outputPath": "C:\\.Net\\BTK\\BTKMVC\\STORE\\Repositories\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1183,7 +1199,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\.Net\\BTK\\BTKMVC\\store\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\.Net\\BTK\\BTKMVC\\store\\Entities\\Entities.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -1221,7 +1241,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

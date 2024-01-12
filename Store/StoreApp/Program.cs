@@ -1,11 +1,13 @@
 using Microsoft.EntityFrameworkCore;
-using StoreApp.Models;
+using Store.Repositories;
+
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<RepositoryContext>(options=>
+builder.Services.AddDbContext<RepositoryContext>(options =>
 {
-    options.UseSqlite(builder.Configuration.GetConnectionString("sqlconnection"));
+    options.UseSqlite(builder.Configuration.GetConnectionString("sqlconnection"),
+    b => b.MigrationsAssembly("StoreApp"));
 });
 var app = builder.Build();
 
@@ -13,7 +15,7 @@ app.UseStaticFiles();
 app.UseHttpsRedirection();
 app.UseRouting();
 app.MapControllerRoute(
-            name:"default",
+            name: "default",
             pattern: "{controller=Home}/{action=Index}/{id?}");
 
 

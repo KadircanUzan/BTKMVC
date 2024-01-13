@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Repositories.Contracts;
 using Store.Entities.Models;
 using Store.Repositories;
 
@@ -28,31 +29,51 @@ namespace StoreApp.Controllers
             );
             return context.Products;
         }
-            
-            // Dependncy Injection patern ile birlikte RepositoryContext Service 
-            //ile birlikte RepositoryContext newleyerek göderecektir.
-        private readonly RepositoryContext _context;
-        public ProductController(RepositoryContext context)
+
+        #region RepositoryContext sınıfı DI olarak kullanılırken;
+        //// Dependncy Injection patern ile birlikte RepositoryContext Service 
+        ////ile birlikte RepositoryContext newleyerek göderecektir.
+        //private readonly RepositoryContext _context;
+        //public ProductController(RepositoryContext context)
+        //{
+        //    _context = context;
+        //}
+        //public IEnumerable<Product> DependencyInjectionSeedData()
+        //{
+        //    //Yukarıdaki patern kullanıldığından 
+        //    //Database içerisindeki, verilere erişebiliyoruz.
+        //    return _context.Products;
+        //}
+
+        ////View ile geri döndürmek istediğimiz zaman
+        //public IActionResult IndexView()
+        //{
+        //    var model = _context.Products.ToList();
+        //    return View(model);
+        //}
+
+        //public IActionResult GetProduct(int id)
+        //{
+        //    Product product = _context.Products.First(p => p.ProductId.Equals(id));
+        //    return View(product);
+        //} 
+        #endregion
+
+        private readonly IRepositoryManager _manager;
+
+        public ProductController(IRepositoryManager manager)
         {
-            _context= context;
-        }
-         public IEnumerable<Product> DependencyInjectionSeedData()
-        {
-            //Yukarıdaki patern kullanıldığından 
-            //Database içerisindeki, verilere erişebiliyoruz.
-            return _context.Products;
+            _manager = manager;
         }
 
-        //View ile geri döndürmek istediğimiz zaman
         public IActionResult IndexView()
         {
-            var model = _context.Products.ToList();
+            var model = _manager.Product.GetAllProducts(false);
             return View(model);
         }
-
         public IActionResult GetProduct(int id)
         {
-            Product product = _context.Products.First(p=>p.ProductId.Equals(id));
+            var product = _manager.Product.GetOneProduct(id,false);
             return View(product);
         }
     }

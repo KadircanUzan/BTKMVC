@@ -1,5 +1,4 @@
-﻿using Entities.Models;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Repositories.Contracts;
 
 namespace StoreApp.Controllers
@@ -13,9 +12,10 @@ namespace StoreApp.Controllers
             _manager = manager;
         }
 
-        public IEnumerable<Category> Index()
+        public IActionResult Index()
         {
-            return _manager.Category.FindAll(false).ToList();
+            var model = _manager.Category.FindAll(false).ToList();
+            return View(model);
         }
     }
 }

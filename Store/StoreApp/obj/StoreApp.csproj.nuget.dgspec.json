@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\.Net\\BTK\\BTKMVC\\Store\\StoreApp\\StoreApp.csproj": {}
+    "C:\\.net\\btk\\btkmvc\\store\\storeapp\\StoreApp.csproj": {}
   },
   "projects": {
-    "C:\\.Net\\BTK\\BTKMVC\\Store\\Entities\\Entities.csproj": {
+    "C:\\.net\\btk\\btkmvc\\store\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\.Net\\BTK\\BTKMVC\\Store\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\.net\\btk\\btkmvc\\store\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\.Net\\BTK\\BTKMVC\\Store\\Entities\\Entities.csproj",
+        "projectPath": "C:\\.net\\btk\\btkmvc\\store\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\Kadircan\\.nuget\\packages\\",
-        "outputPath": "C:\\.Net\\BTK\\BTKMVC\\Store\\Entities\\obj\\",
+        "outputPath": "C:\\.net\\btk\\btkmvc\\store\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -63,14 +63,14 @@
         }
       }
     },
-    "C:\\.Net\\BTK\\BTKMVC\\Store\\Repositories\\Repositories.csproj": {
+    "C:\\.net\\btk\\btkmvc\\store\\Repositories\\Repositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\.Net\\BTK\\BTKMVC\\Store\\Repositories\\Repositories.csproj",
+        "projectUniqueName": "C:\\.net\\btk\\btkmvc\\store\\Repositories\\Repositories.csproj",
         "projectName": "Repositories",
-        "projectPath": "C:\\.Net\\BTK\\BTKMVC\\Store\\Repositories\\Repositories.csproj",
+        "projectPath": "C:\\.net\\btk\\btkmvc\\store\\Repositories\\Repositories.csproj",
         "packagesPath": "C:\\Users\\Kadircan\\.nuget\\packages\\",
-        "outputPath": "C:\\.Net\\BTK\\BTKMVC\\Store\\Repositories\\obj\\",
+        "outputPath": "C:\\.net\\btk\\btkmvc\\store\\Repositories\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -91,8 +91,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\.Net\\BTK\\BTKMVC\\Store\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\.Net\\BTK\\BTKMVC\\Store\\Entities\\Entities.csproj"
+              "C:\\.net\\btk\\btkmvc\\store\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\.net\\btk\\btkmvc\\store\\Entities\\Entities.csproj"
               }
             }
           }
@@ -136,14 +136,14 @@
         }
       }
     },
-    "C:\\.Net\\BTK\\BTKMVC\\Store\\StoreApp\\StoreApp.csproj": {
+    "C:\\.net\\btk\\btkmvc\\store\\storeapp\\StoreApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\.Net\\BTK\\BTKMVC\\Store\\StoreApp\\StoreApp.csproj",
+        "projectUniqueName": "C:\\.net\\btk\\btkmvc\\store\\storeapp\\StoreApp.csproj",
         "projectName": "StoreApp",
-        "projectPath": "C:\\.Net\\BTK\\BTKMVC\\Store\\StoreApp\\StoreApp.csproj",
+        "projectPath": "C:\\.net\\btk\\btkmvc\\store\\storeapp\\StoreApp.csproj",
         "packagesPath": "C:\\Users\\Kadircan\\.nuget\\packages\\",
-        "outputPath": "C:\\.Net\\BTK\\BTKMVC\\Store\\StoreApp\\obj\\",
+        "outputPath": "C:\\.net\\btk\\btkmvc\\store\\storeapp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -164,11 +164,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\.Net\\BTK\\BTKMVC\\Store\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\.Net\\BTK\\BTKMVC\\Store\\Entities\\Entities.csproj"
+              "C:\\.net\\btk\\btkmvc\\store\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\.net\\btk\\btkmvc\\store\\Entities\\Entities.csproj"
               },
-              "C:\\.Net\\BTK\\BTKMVC\\Store\\Repositories\\Repositories.csproj": {
-                "projectPath": "C:\\.Net\\BTK\\BTKMVC\\Store\\Repositories\\Repositories.csproj"
+              "C:\\.net\\btk\\btkmvc\\store\\Repositories\\Repositories.csproj": {
+                "projectPath": "C:\\.net\\btk\\btkmvc\\store\\Repositories\\Repositories.csproj"
               }
             }
           }

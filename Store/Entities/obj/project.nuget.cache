@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "i7jGvNE1xqyArSNVBkdb90h6JLKAjKKj14N/KPgCLzqvnahMq4buMBYM5UwPogYxJUYXxlfchgiSW5zzOpGIvg==",
+  "dgSpecHash": "l4s2y9rH7hC8WqqQyyrgeOGuR6V9vRkRYDhV8rbTbA9j1Flyu9Reou2oJ4ZXrL68b2FeIMbpWFaTHtfeWCw4VA==",
   "success": true,
-  "projectFilePath": "C:\\.Net\\BTK\\BTKMVC\\store\\Entities\\Entities.csproj",
+  "projectFilePath": "C:\\.net\\btk\\btkmvc\\store\\Entities\\Entities.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

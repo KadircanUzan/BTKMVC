@@ -60,3 +60,5 @@ C:\.Net\BTK\BTKMVC\Store\StoreApp\bin\Debug\net6.0\Entities.dll
 C:\.Net\BTK\BTKMVC\Store\StoreApp\bin\Debug\net6.0\Entities.pdb
 C:\.Net\BTK\BTKMVC\Store\StoreApp\bin\Debug\net6.0\Repositories.dll
 C:\.Net\BTK\BTKMVC\Store\StoreApp\bin\Debug\net6.0\Repositories.pdb
+C:\.Net\BTK\BTKMVC\Store\StoreApp\bin\Debug\net6.0\Services.dll
+C:\.Net\BTK\BTKMVC\Store\StoreApp\bin\Debug\net6.0\Services.pdb

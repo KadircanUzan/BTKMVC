@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Repositories.Contracts;
+using Services.Contracts;
 using Store.Entities.Models;
 using Store.Repositories;
 
@@ -59,21 +60,42 @@ namespace StoreApp.Controllers
         //} 
         #endregion
 
-        private readonly IRepositoryManager _manager;
+        #region Repositories katmanı geldiğinde, Service katmanı yokken;
+        //private readonly IRepositoryManager _manager;
 
-        public ProductController(IRepositoryManager manager)
+        //public ProductController(IRepositoryManager manager)
+        //{
+        //    _manager = manager;
+        //}
+
+        //public IActionResult IndexView()
+        //{
+        //    var model = _manager.Product.GetAllProducts(false);
+        //    return View(model);
+        //}
+        //public IActionResult GetProduct(int id)
+        //{
+        //    var product = _manager.Product.GetOneProduct(id, false);
+        //    return View(product);
+        //} 
+        #endregion
+
+        private readonly IServiceManager _manager;
+
+        public ProductController(IServiceManager manager)
         {
             _manager = manager;
         }
 
         public IActionResult IndexView()
         {
-            var model = _manager.Product.GetAllProducts(false);
+            var model = _manager.ProductService.GetAllProducts(false);
             return View(model);
         }
-        public IActionResult GetProduct(int id)
+        //Id'nin route dan geldiğini belirtmek için FromRoute kullanıyoruz.
+        public IActionResult GetProduct([FromRoute(Name ="id")] int id)
         {
-            var product = _manager.Product.GetOneProduct(id,false);
+            var product = _manager.ProductService.GetOneProduct(id, false);
             return View(product);
         }
     }

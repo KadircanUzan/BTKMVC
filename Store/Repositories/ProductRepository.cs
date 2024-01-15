@@ -1,11 +1,6 @@
 ﻿using Repositories.Contracts;
 using Store.Entities.Models;
 using Store.Repositories;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Repositories
 {

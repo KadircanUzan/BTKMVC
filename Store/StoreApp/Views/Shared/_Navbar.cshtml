@@ -8,8 +8,8 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
         <a class="nav-link active" aria-current="page" asp-controller="Home" asp-action="Index">Home</a>
-        <a class="nav-link active" aria-current="page" asp-controller="Product" asp-action="IndexView">Product</a>
-                <a class="nav-link active" aria-current="page" asp-controller="Category" asp-action="Index">Category</a>
+        <a class="nav-link active" aria-current="page" asp-controller="Product" asp-action="IndexView">Product (@await Component.InvokeAsync("ProductSummary"))</a>
+        <a class="nav-link active" aria-current="page" asp-controller="Category" asp-action="Index">Category</a>
       </div>
     </div>
   </div>

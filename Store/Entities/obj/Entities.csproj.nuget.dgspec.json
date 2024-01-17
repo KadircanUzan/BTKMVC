@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\.Net\\BTK\\BTKMVC\\Store\\Entities\\Entities.csproj": {}
+    "c:\\.Net\\BTK\\BTKMVC\\Store\\Entities\\Entities.csproj": {}
   },
   "projects": {
-    "C:\\.Net\\BTK\\BTKMVC\\Store\\Entities\\Entities.csproj": {
+    "c:\\.Net\\BTK\\BTKMVC\\Store\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\.Net\\BTK\\BTKMVC\\Store\\Entities\\Entities.csproj",
+        "projectUniqueName": "c:\\.Net\\BTK\\BTKMVC\\Store\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\.Net\\BTK\\BTKMVC\\Store\\Entities\\Entities.csproj",
+        "projectPath": "c:\\.Net\\BTK\\BTKMVC\\Store\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\Kadircan\\.nuget\\packages\\",
-        "outputPath": "C:\\.Net\\BTK\\BTKMVC\\Store\\Entities\\obj\\",
+        "outputPath": "c:\\.Net\\BTK\\BTKMVC\\Store\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,4 +1,4 @@
-<nav class="navbar bg-primary border-bottom navbar-expand-lg bg-body-tertiary">
+<nav class="navbar bg-light border-bottom navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <a class="navbar-brand" href="/">Store App</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -9,7 +9,7 @@
       <div class="navbar-nav">
         <a class="nav-link active" aria-current="page" asp-controller="Home" asp-action="Index">Home</a>
         <a class="nav-link active" aria-current="page" asp-controller="Product" asp-action="IndexView">Product (@await Component.InvokeAsync("ProductSummary"))</a>
-        <a class="nav-link active" aria-current="page" asp-controller="Category" asp-action="Index">Category</a>
+        <a class="nav-link active" aria-current="page" asp-controller="Category" asp-action="Index">Categories</a>
       </div>
     </div>
   </div>

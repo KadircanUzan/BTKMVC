@@ -1219,8 +1219,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "c:\\.Net\\BTK\\BTKMVC\\Store\\Entities\\Entities.csproj": {
-              "projectPath": "c:\\.Net\\BTK\\BTKMVC\\Store\\Entities\\Entities.csproj"
+            "C:\\.Net\\BTK\\BTKMVC\\Store\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\.Net\\BTK\\BTKMVC\\Store\\Entities\\Entities.csproj"
             },
             "C:\\.Net\\BTK\\BTKMVC\\Store\\Repositories\\Repositories.csproj": {
               "projectPath": "C:\\.Net\\BTK\\BTKMVC\\Store\\Repositories\\Repositories.csproj"

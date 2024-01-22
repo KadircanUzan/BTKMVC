@@ -11,8 +11,8 @@ C:\.Net\BTK\BTKMVC\Store\Services\obj\Debug\net6.0\Services.AssemblyInfoInputs.c
 C:\.Net\BTK\BTKMVC\Store\Services\obj\Debug\net6.0\Services.AssemblyInfo.cs
 C:\.Net\BTK\BTKMVC\Store\Services\obj\Debug\net6.0\Services.csproj.CoreCompileInputs.cache
 C:\.Net\BTK\BTKMVC\Store\Services\obj\Debug\net6.0\Services.sourcelink.json
-C:\.Net\BTK\BTKMVC\Store\Services\obj\Debug\net6.0\Services.csproj.CopyComplete
 C:\.Net\BTK\BTKMVC\Store\Services\obj\Debug\net6.0\Services.dll
 C:\.Net\BTK\BTKMVC\Store\Services\obj\Debug\net6.0\refint\Services.dll
 C:\.Net\BTK\BTKMVC\Store\Services\obj\Debug\net6.0\Services.pdb
 C:\.Net\BTK\BTKMVC\Store\Services\obj\Debug\net6.0\ref\Services.dll
+c:\.Net\BTK\BTKMVC\Store\Services\obj\Debug\net6.0\Services.csproj.Up2Date

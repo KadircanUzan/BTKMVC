@@ -53,7 +53,6 @@ C:\.Net\BTK\BTKMVC\Store\StoreApp\bin\Debug\net6.0\runtimes\win-arm64\native\e_s
 C:\.Net\BTK\BTKMVC\Store\StoreApp\bin\Debug\net6.0\runtimes\win-x64\native\e_sqlite3.dll
 C:\.Net\BTK\BTKMVC\Store\StoreApp\bin\Debug\net6.0\runtimes\win-x86\native\e_sqlite3.dll
 C:\.Net\BTK\BTKMVC\Store\StoreApp\obj\Debug\net6.0\StoreApp.csproj.AssemblyReference.cache
-C:\.Net\BTK\BTKMVC\Store\StoreApp\obj\Debug\net6.0\StoreApp.csproj.CopyComplete
 C:\.Net\BTK\BTKMVC\Store\StoreApp\bin\Debug\net6.0\StoreApp.staticwebassets.runtime.json
 C:\.Net\BTK\BTKMVC\Store\StoreApp\bin\Debug\net6.0\Entities.dll
 C:\.Net\BTK\BTKMVC\Store\StoreApp\bin\Debug\net6.0\Entities.pdb
@@ -63,3 +62,4 @@ C:\.Net\BTK\BTKMVC\Store\StoreApp\bin\Debug\net6.0\Services.dll
 C:\.Net\BTK\BTKMVC\Store\StoreApp\bin\Debug\net6.0\Services.pdb
 C:\.Net\BTK\BTKMVC\Store\StoreApp\bin\Debug\net6.0\package-lock.json
 C:\.Net\BTK\BTKMVC\Store\StoreApp\bin\Debug\net6.0\package.json
+C:\.Net\BTK\BTKMVC\Store\StoreApp\obj\Debug\net6.0\StoreApp.csproj.Up2Date

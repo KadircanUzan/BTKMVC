@@ -13,4 +13,4 @@ C:\.Net\BTK\BTKMVC\Store\Repositories\obj\Debug\net6.0\ref\Repositories.dll
 C:\.Net\BTK\BTKMVC\Store\Repositories\obj\Debug\net6.0\Repositories.csproj.AssemblyReference.cache
 C:\.NET\BTK\BTKMVC\Store\Repositories\bin\Debug\net6.0\Entities.dll
 C:\.NET\BTK\BTKMVC\Store\Repositories\bin\Debug\net6.0\Entities.pdb
-C:\.NET\BTK\BTKMVC\Store\Repositories\obj\Debug\net6.0\Repositories.csproj.CopyComplete
+c:\.Net\BTK\BTKMVC\Store\Repositories\obj\Debug\net6.0\Reposito.787EC4B2.Up2Date

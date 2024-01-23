@@ -1,6 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Repositories.Contracts;
-using Store.Repositories;
 using System.Linq.Expressions;
 
 namespace Repositories

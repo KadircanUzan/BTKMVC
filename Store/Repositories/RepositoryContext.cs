@@ -1,7 +1,8 @@
-﻿using Entities.Models;
+﻿using System.Reflection;
+using Entities.Models;
 using Microsoft.EntityFrameworkCore;
-using Store.Entities.Models;
-namespace Store.Repositories
+
+namespace Repositories
 {
     public class RepositoryContext : DbContext
     {
@@ -25,21 +26,14 @@ namespace Store.Repositories
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);//Base deki OnModelCreating metodunu çağırır.
+            //Entity Configurationları çağırmak için;
+            //1.yol 
+            // modelBuilder.ApplyConfiguration(new ProductConfig());
+            // modelBuilder.ApplyConfiguration(new CategoryConfig());
 
-            modelBuilder.Entity<Product>()
-            .HasData(
-                new Product { ProductId = 1, ProductName = "Computer", Price = 10_000 },
-                new Product { ProductId = 2, ProductName = "Keyboard", Price = 20_000 },
-                new Product { ProductId = 3, ProductName = "Mouse", Price = 3_000 },
-                new Product { ProductId = 4, ProductName = "Monitor", Price = 40_000 },
-                new Product { ProductId = 5, ProductName = "Deck", Price = 5_500 }
-            );
-
-            modelBuilder.Entity<Category>()
-           .HasData(
-               new Category { CategoryId = 1, CategoryName = "Book" },
-               new Category { CategoryId = 2, CategoryName = "Electronic" }
-           );
+            //2.yol
+            //İlgili ifadenin Config dosyasını dinamik olarak görmektedir.
+            modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
             /*
             Bu örnekte, Product entity'sine ait beş örnek eklenmiştir. Bu örnekler, uygulama
             ilk çalıştığında veritabanına eklenir. Böylece, uygulama ilk kez çalıştığında,

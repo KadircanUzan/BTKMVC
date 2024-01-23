@@ -1,6 +1,6 @@
-﻿using Repositories.Contracts;
+﻿using Entities.Models;
+using Repositories.Contracts;
 using Services.Contracts;
-using Store.Entities.Models;
 
 namespace Services
 {

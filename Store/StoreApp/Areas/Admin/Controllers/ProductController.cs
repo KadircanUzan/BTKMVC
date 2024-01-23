@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.VisualBasic;
 using Services.Contracts;
-using Store.Entities.Models;
+using Entities.Models;
 
 namespace StoreApp.Areas.Admin.Controllers
 {   

@@ -1,6 +1,5 @@
 ﻿using Repositories.Contracts;
-using Store.Entities.Models;
-using Store.Repositories;
+using Entities.Models;
 
 namespace Repositories
 {

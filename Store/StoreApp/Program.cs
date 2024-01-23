@@ -3,7 +3,6 @@ using Repositories;
 using Repositories.Contracts;
 using Services;
 using Services.Contracts;
-using Store.Repositories;
 
 
 var builder = WebApplication.CreateBuilder(args);

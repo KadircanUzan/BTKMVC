@@ -1,4 +1,4 @@
-﻿using Store.Entities.Models;
+﻿using Entities.Models;
 
 namespace Repositories.Contracts
 {

@@ -2,8 +2,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Repositories.Contracts;
 using Services.Contracts;
-using Store.Entities.Models;
-using Store.Repositories;
+using Entities.Models;
+using Repositories;
 
 namespace StoreApp.Controllers
 {

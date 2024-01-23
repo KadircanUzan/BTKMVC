@@ -1,5 +1,4 @@
 ﻿using Repositories.Contracts;
-using Store.Repositories;
 
 namespace Repositories
 {

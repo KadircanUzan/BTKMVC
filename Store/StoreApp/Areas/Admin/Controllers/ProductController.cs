@@ -26,13 +26,13 @@ namespace StoreApp.Areas.Admin.Controllers
         public IActionResult Create()
         {
             //1.Yol dinamik
-            ViewBag.Categories = _manager.CategoryService.GetAllCategories(false);
+            // ViewBag.Categories = _manager.CategoryService.GetAllCategories(false);
             //2.Yol dinamik tag helpers ile
-            ViewBag.Categories =
-            new SelectList(_manager.CategoryService.GetAllCategories(false),"CategoryId","CategoryName","1");
-            
+            ViewBag.Categories = GetCategoriesSelectList();
             return View();
         }
+
+        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public IActionResult Create([FromForm] ProductDtoForInsertion productDto)
@@ -48,13 +48,14 @@ namespace StoreApp.Areas.Admin.Controllers
 
         public IActionResult Update([FromRoute(Name ="id")] int id)
         {
-            var model = _manager.ProductService.GetOneProduct(id,false);
+            ViewBag.Categories = GetCategoriesSelectList();
+            var model = _manager.ProductService.GetOneProductForUpdate(id,false);
             return View(model);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Update(Product product)
+        public IActionResult Update([FromForm] ProductDtoForUpdate product)
         {
             if (ModelState.IsValid)
             {
@@ -68,6 +69,14 @@ namespace StoreApp.Areas.Admin.Controllers
         {
             _manager.ProductService.DeleteOneProduct(id);
             return RedirectToAction("Index");
+        }
+
+        private SelectList GetCategoriesSelectList()
+        {
+            return new SelectList(_manager.CategoryService.GetAllCategories(false),
+            "CategoryId",
+            "CategoryName",
+            "1");
         }
 
     }

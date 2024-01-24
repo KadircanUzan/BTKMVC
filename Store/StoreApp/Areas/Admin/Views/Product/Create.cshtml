@@ -1,4 +1,4 @@
-@model Product
+@model ProductDtoForInsertion
 
 <div class="text-center">
     <div class="display-6">Create</div>
@@ -9,15 +9,22 @@
     <div class="text-danger" asp-validation-summary="All"></div>
 
     <div class="form-group my-3">
+
         <label asp-for="CategoryId"></label>
+        <!-- 
         <select  class="form-control" asp-for="CategoryId">
+            //1.yol manuel
             @* <option value="1">Book</option>
             <option value="2">Electronic</option> *@
-            @foreach(Category cat in ViewBag.Categories)
+            //2.yol dinamik
+            @* @foreach(Category cat in ViewBag.Categories)
             {
                 <option value="@cat.CategoryId">@cat.CategoryName</option>
-            }
+            } *@
         </select>
+        -->
+        <!--//3.yol Tag Helper yardımı ile select içerinde asp-items="@ViewBag.Categories" kullanmak yeterlidir.-->
+        <select  class="form-control" asp-for="CategoryId" asp-items="@ViewBag.Categories"></select>
     </div>
 
     <div class="form-group my-3">

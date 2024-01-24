@@ -1,7 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.VisualBasic;
 using Services.Contracts;
 using Entities.Models;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Entities.Dtos;
 
 namespace StoreApp.Areas.Admin.Controllers
 {   
@@ -24,17 +25,21 @@ namespace StoreApp.Areas.Admin.Controllers
 
         public IActionResult Create()
         {
-            
+            //1.Yol dinamik
             ViewBag.Categories = _manager.CategoryService.GetAllCategories(false);
+            //2.Yol dinamik tag helpers ile
+            ViewBag.Categories =
+            new SelectList(_manager.CategoryService.GetAllCategories(false),"CategoryId","CategoryName","1");
+            
             return View();
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create([FromForm] Product product)
+        public IActionResult Create([FromForm] ProductDtoForInsertion productDto)
         {
             if (ModelState.IsValid)
             {
-                _manager.ProductService.CreateProduct(product);
+                _manager.ProductService.CreateProduct(productDto);
                 return RedirectToAction("Index");
             }
             return View();
@@ -56,7 +61,7 @@ namespace StoreApp.Areas.Admin.Controllers
                 _manager.ProductService.UpdateOneProduct(product);
                 return RedirectToAction("Index");
             }
-           return View();
+            return View();
         }
 
         public IActionResult Delete([FromRoute(Name ="id")] int id)

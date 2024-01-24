@@ -41,6 +41,11 @@ namespace Repositories
             */
 
         }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.EnableSensitiveDataLogging();
+        }   
+
 
     }
 }

@@ -63,3 +63,5 @@ C:\.Net\BTK\BTKMVC\Store\StoreApp\bin\Debug\net6.0\Services.pdb
 C:\.Net\BTK\BTKMVC\Store\StoreApp\bin\Debug\net6.0\package-lock.json
 C:\.Net\BTK\BTKMVC\Store\StoreApp\bin\Debug\net6.0\package.json
 C:\.Net\BTK\BTKMVC\Store\StoreApp\obj\Debug\net6.0\StoreApp.csproj.Up2Date
+C:\.Net\BTK\BTKMVC\Store\StoreApp\bin\Debug\net6.0\AutoMapper.dll
+C:\.Net\BTK\BTKMVC\Store\StoreApp\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

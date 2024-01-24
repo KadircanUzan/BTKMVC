@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ebdbwGZin5cSJlyrOCbb6x855okuZokCBiYKPAXIsOsTcTKrmMpwnWJBJRNGV62dUKggfSORiYIGXQCoyDpBnQ==",
+  "dgSpecHash": "PjchCEc6onhjTdIvaJI6EA0AHlSrBen6h9TXB93hb79ENccB5GvwQ1NyjgxlZxosNTJuA8jV1Oj6lBY6Pfn6zw==",
   "success": true,
-  "projectFilePath": "c:\\.Net\\BTK\\BTKMVC\\Store\\Services\\Services.csproj",
+  "projectFilePath": "C:\\.Net\\BTK\\BTKMVC\\Store\\Services\\Services.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kadircan\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Kadircan\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

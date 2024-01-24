@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "R1iJ1VNMkg0cP5dy7lvNdaMOLO/QcHul7cz3QYLt7IA=",
+  "Hash": "FjjnKCYaRMvoYgapJgYXqQ9fvMP/wHcJ7OwT+5rha7A=",
   "Source": "StoreApp",
   "BasePath": "_content/StoreApp",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "StoreApp\\wwwroot",
       "Source": "StoreApp",
-      "ContentRoot": "C:\\.Net\\BTK\\BTKMVC\\Store\\StoreApp\\wwwroot\\",
+      "ContentRoot": "c:\\.Net\\BTK\\BTKMVC\\Store\\StoreApp\\wwwroot\\",
       "BasePath": "_content/StoreApp",
       "Pattern": "**"
     }
@@ -20,7 +20,7 @@
       "Identity": "C:\\.Net\\BTK\\BTKMVC\\Store\\StoreApp\\wwwroot\\css\\site.css",
       "SourceId": "StoreApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\.Net\\BTK\\BTKMVC\\Store\\StoreApp\\wwwroot\\",
+      "ContentRoot": "c:\\.Net\\BTK\\BTKMVC\\Store\\StoreApp\\wwwroot\\",
       "BasePath": "_content/StoreApp",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -39,7 +39,7 @@
       "Identity": "C:\\.Net\\BTK\\BTKMVC\\Store\\StoreApp\\wwwroot\\html\\Error.html",
       "SourceId": "StoreApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\.Net\\BTK\\BTKMVC\\Store\\StoreApp\\wwwroot\\",
+      "ContentRoot": "c:\\.Net\\BTK\\BTKMVC\\Store\\StoreApp\\wwwroot\\",
       "BasePath": "_content/StoreApp",
       "RelativePath": "html/Error.html",
       "AssetKind": "All",
@@ -58,7 +58,7 @@
       "Identity": "C:\\.Net\\BTK\\BTKMVC\\Store\\StoreApp\\wwwroot\\images\\Computer.jpeg",
       "SourceId": "StoreApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\.Net\\BTK\\BTKMVC\\Store\\StoreApp\\wwwroot\\",
+      "ContentRoot": "c:\\.Net\\BTK\\BTKMVC\\Store\\StoreApp\\wwwroot\\",
       "BasePath": "_content/StoreApp",
       "RelativePath": "images/Computer.jpeg",
       "AssetKind": "All",
@@ -77,7 +77,7 @@
       "Identity": "C:\\.Net\\BTK\\BTKMVC\\Store\\StoreApp\\wwwroot\\js\\site.js",
       "SourceId": "StoreApp",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\.Net\\BTK\\BTKMVC\\Store\\StoreApp\\wwwroot\\",
+      "ContentRoot": "c:\\.Net\\BTK\\BTKMVC\\Store\\StoreApp\\wwwroot\\",
       "BasePath": "_content/StoreApp",
       "RelativePath": "js/site.js",
       "AssetKind": "All",

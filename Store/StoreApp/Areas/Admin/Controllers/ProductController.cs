@@ -3,6 +3,7 @@ using Services.Contracts;
 using Entities.Models;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Entities.Dtos;
+using System.Runtime.CompilerServices;
 
 namespace StoreApp.Areas.Admin.Controllers
 {   
@@ -35,10 +36,16 @@ namespace StoreApp.Areas.Admin.Controllers
         
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create([FromForm] ProductDtoForInsertion productDto)
+        public async Task<IActionResult> Create([FromForm] ProductDtoForInsertion productDto,IFormFile file)
         {
             if (ModelState.IsValid)
             {
+                string path = Path.Combine(Directory.GetCurrentDirectory(),"wwwroot","images",file.FileName);
+                using (var stream = new FileStream(path,FileMode.Create))
+                {
+                    await file.CopyToAsync(stream);
+                }
+                productDto.ImageUrl = string.Concat("/images/",file.FileName);
                 _manager.ProductService.CreateProduct(productDto);
                 return RedirectToAction("Index");
             }
@@ -55,11 +62,17 @@ namespace StoreApp.Areas.Admin.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Update([FromForm] ProductDtoForUpdate product)
+        public async Task<IActionResult> Update([FromForm] ProductDtoForUpdate productDto, IFormFile file)
         {
-            if (ModelState.IsValid)
+              if (ModelState.IsValid)
             {
-                _manager.ProductService.UpdateOneProduct(product);
+                string path = Path.Combine(Directory.GetCurrentDirectory(),"wwwroot","images",file.FileName);
+                using (var stream = new FileStream(path,FileMode.Create))
+                {
+                    await file.CopyToAsync(stream);
+                }
+                productDto.ImageUrl = string.Concat("/images/",file.FileName);
+                _manager.ProductService.UpdateOneProduct(productDto);
                 return RedirectToAction("Index");
             }
             return View();

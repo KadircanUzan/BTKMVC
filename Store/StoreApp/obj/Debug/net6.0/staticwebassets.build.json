@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "o012S6+7npoS98vAZEXW8fW2r3RIoGwcnLrI+nFDkEk=",
+  "Hash": "5HnKFcmYe0Jqsh3v4BKNvLTX/Nk5t17nlY/9QG9jpWA=",
   "Source": "StoreApp",
   "BasePath": "_content/StoreApp",
   "Mode": "Default",
@@ -262,6 +262,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\9.jpg"
+    },
+    {
+      "Identity": "C:\\.Net\\BTK\\BTKMVC\\Store\\StoreApp\\wwwroot\\images\\buyununuyanisi.jpg",
+      "SourceId": "StoreApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\.Net\\BTK\\BTKMVC\\Store\\StoreApp\\wwwroot\\",
+      "BasePath": "_content/StoreApp",
+      "RelativePath": "images/buyununuyanisi.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\buyununuyanisi.jpg"
     },
     {
       "Identity": "C:\\.Net\\BTK\\BTKMVC\\Store\\StoreApp\\wwwroot\\images\\Computer.jpeg",

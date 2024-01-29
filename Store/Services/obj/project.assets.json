@@ -1331,11 +1331,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\.Net\\BTK\\BTKMVC\\Store\\Services\\Services.csproj",
+      "projectUniqueName": "C:\\.Net\\BTK\\BTKMVC\\Store\\Services\\Services.csproj",
       "projectName": "Services",
-      "projectPath": "c:\\.Net\\BTK\\BTKMVC\\Store\\Services\\Services.csproj",
+      "projectPath": "C:\\.Net\\BTK\\BTKMVC\\Store\\Services\\Services.csproj",
       "packagesPath": "C:\\Users\\Kadircan\\.nuget\\packages\\",
-      "outputPath": "c:\\.Net\\BTK\\BTKMVC\\Store\\Services\\obj\\",
+      "outputPath": "C:\\.Net\\BTK\\BTKMVC\\Store\\Services\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
